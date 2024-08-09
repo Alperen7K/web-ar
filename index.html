@@ -130,8 +130,8 @@
 		var markerRoot = new THREE.Group
 		scene.add(markerRoot)
 		var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
-			//type: 'barcode',
-			//barcodeValue: 'https://magicstickr.github.io/video-base/index.html',
+			type: 'barcode',
+			barcodeValue: 'https://magicstickr.github.io/video-base/index.html',
 			type : 'pattern',
 			patternUrl : 'marker/marker_yann.patt'
 		})
@@ -161,7 +161,7 @@
 
 		// Load 3D object
 		var loader = new THREE.GLTFLoader();
-		loader.load('content/scene.glb', function ( gltf ) {
+		loader.load('https://admin.kapsulteknoloji.org/uploads/war_plane_66e5808bd3.glb', function ( gltf ) {
 			//add it to the scene
 			all.add( gltf.scene );
 			//Resize/rescale the 3D Object
